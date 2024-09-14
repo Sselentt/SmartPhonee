@@ -11,9 +11,9 @@ namespace SmartPhonee.Application.Interfaces.ProductInterface
     public interface IProductRepository
     {
         List<Product> GetProductsListWithCategory();
-       
 
-      
         
+
+
     }
 }

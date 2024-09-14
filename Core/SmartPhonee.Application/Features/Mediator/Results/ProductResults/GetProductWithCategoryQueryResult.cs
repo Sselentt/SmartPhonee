@@ -10,6 +10,7 @@ namespace SmartPhonee.Application.Features.Mediator.Results.ProductResults
     {
         public int CategoryID { get; set; }
         public int ProductID { get; set; }
+        public int ImageID { get; set; }
         public string ProductName { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }

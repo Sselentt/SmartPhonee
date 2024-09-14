@@ -26,6 +26,7 @@ namespace SmartPhonee.Application.Features.Mediator.Handlers.ProductHandlers
             {
                 ProductID = x.ProductID,
                 CategoryID = x.CategoryID,
+                ImageID=x.ImageID,
                 ProductName = x.ProductName,
                 CategoryName = x.Category.CategoryName,
                 Description = x.Description,
