@@ -1,23 +1,19 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartPhonee.Domain.Entities
+namespace SmartPhonee.Application.Features.Mediator.Commands.CommentCommands
 {
-    public class Comment
+    public class CreateCommentCommand : IRequest
     {
-        public int CommentID { get; set; }
         public double Rating { get; set; }
         public string Description { get; set; }
         public DateTime SendDate { get; set; }
         public string CustomerName { get; set; }
         public string CustomerEmail { get; set; }
-        public int ProductID { get; set; }
-
-        [ForeignKey("ProductID")]
-        public Product Product { get; set; }
+        public int ProductId { get; set; }
     }
 }

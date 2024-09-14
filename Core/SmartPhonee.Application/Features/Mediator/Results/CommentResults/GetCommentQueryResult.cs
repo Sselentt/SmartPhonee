@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartPhonee.Domain.Entities
+namespace SmartPhonee.Application.Features.Mediator.Results.CommentResults
 {
-    public class Comment
+    public class GetCommentQueryResult
     {
         public int CommentID { get; set; }
         public double Rating { get; set; }
@@ -15,9 +14,7 @@ namespace SmartPhonee.Domain.Entities
         public DateTime SendDate { get; set; }
         public string CustomerName { get; set; }
         public string CustomerEmail { get; set; }
-        public int ProductID { get; set; }
+        public int ProductId { get; set; }
 
-        [ForeignKey("ProductID")]
-        public Product Product { get; set; }
     }
 }
