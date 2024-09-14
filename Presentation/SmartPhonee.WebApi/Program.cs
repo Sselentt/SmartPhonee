@@ -1,6 +1,22 @@
+using SmartPhonee.Application.Interfaces;
+using SmartPhonee.Application.Services;
+using SmartPhonee.Persistance.Context;
+using SmartPhonee.Persistance.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddScoped<SmartPhoneeContext>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddAplicationService(builder.Configuration);
+
+
+
+
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

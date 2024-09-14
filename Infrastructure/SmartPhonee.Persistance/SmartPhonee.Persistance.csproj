@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\SmartPhonee.Application\SmartPhonee.Application.csproj" />
     <ProjectReference Include="..\..\Core\SmartPhonee.Domain\SmartPhonee.Domain.csproj" />
   </ItemGroup>
 
