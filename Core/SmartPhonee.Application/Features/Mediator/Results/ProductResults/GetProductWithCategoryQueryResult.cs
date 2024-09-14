@@ -1,16 +1,17 @@
-﻿using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartPhonee.Application.Features.Mediator.Commands.ProductCommands
+namespace SmartPhonee.Application.Features.Mediator.Results.ProductResults
 {
-    public class UpdateProductCommand:IRequest
+    public class GetProductWithCategoryQueryResult
     {
+        public int CategoryID { get; set; }
         public int ProductID { get; set; }
         public string ProductName { get; set; }
+        public string CategoryName { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
         public string ImageUrl { get; set; }
@@ -24,10 +25,5 @@ namespace SmartPhonee.Application.Features.Mediator.Commands.ProductCommands
         public double Width { get; set; }
         public double Height { get; set; }
         public double Depth { get; set; }
-        public string warrantyInformation { get; set; }
-        public string shippingInformation { get; set; }
-        public bool availabilityStatus { get; set; }
-        public int CategoryId { get; set; }
-        public int ImageId { get; set; }
     }
 }

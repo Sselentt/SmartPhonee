@@ -52,5 +52,13 @@ namespace SmartPhonee.WebApi.Controllers
             await _mediator.Send(command);
             return Ok("Ürün Başarıyla Güncellendi");
         }
+
+        [HttpGet("GetProductWithCategory")]
+        public async  Task<IActionResult> GetProductWithCategory()
+        {
+            var values = await _mediator.Send(new GetProductWithCategoryQuery());
+            return Ok(values);
+        }
     }
 }
+

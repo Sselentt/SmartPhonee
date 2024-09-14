@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SmartPhonee.Persistance.Context;
 
@@ -11,9 +12,11 @@ using SmartPhonee.Persistance.Context;
 namespace SmartPhonee.Persistance.Migrations
 {
     [DbContext(typeof(SmartPhoneeContext))]
-    partial class SmartPhoneeContextModelSnapshot : ModelSnapshot
+    [Migration("20240914201219_initial3")]
+    partial class initial3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

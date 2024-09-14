@@ -13,7 +13,7 @@ namespace SmartPhonee.Domain.Entities
         public string Description { get; set; }
         public double Price { get; set; }
         public string ImageUrl { get; set; }
-        public int discountPercentage { get; set; }
+        public double discountPercentage { get; set; }
         public double AvgRating { get; set; }
         public int Stock { get; set; }
         public string Tags { get; set; }

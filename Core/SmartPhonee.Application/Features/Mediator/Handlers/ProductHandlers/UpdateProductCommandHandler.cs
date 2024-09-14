@@ -39,7 +39,8 @@ namespace SmartPhonee.Application.Features.Mediator.Handlers.ProductHandlers
             values.warrantyInformation = request.warrantyInformation;
             values.shippingInformation = request.shippingInformation;
             values.availabilityStatus = request.availabilityStatus;
-            values.CategoryID = request.CategoryID;
+            values.CategoryID = request.CategoryId;
+            values.ImageID = request.ImageId;
             await _repository.UpdateAsync(values);
         }
     }

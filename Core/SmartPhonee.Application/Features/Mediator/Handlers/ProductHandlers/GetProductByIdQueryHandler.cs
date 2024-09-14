@@ -44,7 +44,8 @@ namespace SmartPhonee.Application.Features.Mediator.Handlers.ProductHandlers
                 warrantyInformation=values .warrantyInformation,
                 shippingInformation=values .shippingInformation,
                 availabilityStatus=values.availabilityStatus,
-                CategoryID=values .CategoryID,
+                CategoryId=values .CategoryID,
+                ImageId=values.ImageID,
                 
                
             };

@@ -44,7 +44,8 @@ namespace SmartPhonee.Application.Features.Mediator.Handlers.ProductHandlers
                 warrantyInformation=x.warrantyInformation,
                 shippingInformation=x.shippingInformation,
                 availabilityStatus=x.availabilityStatus,
-                CategoryID=x.CategoryID,
+                CategoryId=x.CategoryID,
+                ImageId=x.ImageID,
                 
             }).ToList();
         }

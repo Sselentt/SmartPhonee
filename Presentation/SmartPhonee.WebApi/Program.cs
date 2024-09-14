@@ -1,7 +1,10 @@
+using SmartPhonee.Application.Features.Mediator.Handlers.ProductHandlers;
 using SmartPhonee.Application.Interfaces;
+using SmartPhonee.Application.Interfaces.ProductInterface;
 using SmartPhonee.Application.Services;
 using SmartPhonee.Persistance.Context;
 using SmartPhonee.Persistance.Repositories;
+using SmartPhonee.Persistance.Repositories.ProductRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<SmartPhoneeContext>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
+
+
 
 builder.Services.AddAplicationService(builder.Configuration);
 

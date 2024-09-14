@@ -13,7 +13,7 @@ namespace SmartPhonee.Application.Features.Mediator.Results.ProductResults
         public string Description { get; set; }
         public double Price { get; set; }
         public string ImageUrl { get; set; }
-        public int discountPercentage { get; set; }
+        public double discountPercentage { get; set; }
         public double AvgRating { get; set; }
         public int Stock { get; set; }
         public string Tags { get; set; }
@@ -26,6 +26,8 @@ namespace SmartPhonee.Application.Features.Mediator.Results.ProductResults
         public string warrantyInformation { get; set; }
         public string shippingInformation { get; set; }
         public bool availabilityStatus { get; set; }
-        public int CategoryID { get; set; }
+        public int CategoryId { get; set; }
+        public int ImageId { get; set; }
+
     }
 }

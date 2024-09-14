@@ -40,7 +40,8 @@ namespace SmartPhonee.Application.Features.Mediator.Handlers.ProductHandlers
                 warrantyInformation=request.warrantyInformation,
                 shippingInformation=request.shippingInformation,
                 availabilityStatus=request.availabilityStatus,
-                CategoryID=request.CategoryID,
+                CategoryID=request.CategoryId,
+                
             });
         }
     }
